@@ -12,13 +12,3 @@
 ### TX, NY & CA is contributing to 68%
 ### Overall Activation rate is 57.5%
 ### Overall Delinquent rate is 6.06
-
-
-
-IncomeGroup = SWITCH(
- TRUE(),
- 'public cust_detail'[income] < 35000, "Low",
- 'public cust_detail'[income] >= 35000 && 'public cust_detail'[income] <70000, "Med",
- 'public cust_detail'[income] >= 70000, "High",
- "unknown"
-)
